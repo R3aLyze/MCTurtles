@@ -26,7 +26,7 @@ function nextTree()
 
     local success, data = turtle.inspect()
     if success then
-        if data.name == "minecraft:spruce_log" then
+        if data.name == "minecraft:spruce_log" or data.name == "minecraft:jungle_log" then
             chopTree()
         end
     end
@@ -34,14 +34,14 @@ function nextTree()
     turtle.turnLeft()
     success, data = turtle.inspect()
     if success then
-        if data.name == "minecraft:spruce_log" then
+        if data.name == "minecraft:spruce_log" or data.name == "minecraft:jungle_log" then
             chopTree()
         end
         turtle.forward()
         turtle.turnRight()
         success, data = turtle.inspect()
         if success then
-            if data.name == "minecraft:spruce_log" then
+            if data.name == "minecraft:spruce_log" or data.name == "minecraft:jungle_log" then
                 chopTree()
             end
         end
@@ -50,14 +50,14 @@ function nextTree()
         turtle.turnRight()
         success, data = turtle.inspect()
         if success then
-            if data.name == "minecraft:spruce_log" then
+            if data.name == "minecraft:spruce_log" or data.name == "minecraft:jungle_log" then
                 chopTree()
             end
             turtle.forward()
             turtle.turnLeft()
             success, data = turtle.inspect()
             if success then
-                if data.name == "minecraft:spruce_log" then
+                if data.name == "minecraft:spruce_log" or data.name == "minecraft:jungle_log" then
                     chopTree()
                 end
             end
